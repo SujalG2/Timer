@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="shortcut icon" href="play.png" type="image/png">
+    <link href="timer.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Enter Minutes</h3> <input type="number" id="input" min="0" step="1">
+        <div class="display" id="display"></div>
+        <div class="icons"> 
+            <!-- Use SVG icons for play, reset, and pause -->
+            <div>
+                <svg class="icon" id="start" viewBox="0 0 24 24" fill="#05ABCD" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                <p style="color:#05ABCD;">Start</p>
+            </div>
+            <div>
+                <svg class="icon" id="reset" viewBox="0 0 24 24" fill="#05ABCD" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 6V3l-4 4 4 4V8c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 16.03 20 14.57 20 13c0-4.42-3.58-8-8-8zm0 12c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v2z"/></svg>
+                <p style="color:#05ABCD;">Reset</p>
+            </div>
+            <div>
+                <svg class="icon" id="pause" viewBox="0 0 24 24" fill="#05ABCD" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                <p style="color:#05ABCD;">Pause</p>
+            </div>
+        </div>
+    </div>
+    <script src="timer.js"></script>
+
+   
+</body>
+</html>
